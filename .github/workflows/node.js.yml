@@ -22,4 +22,4 @@ jobs:
       run: echo "${{ secrets.HERBAL_ENV_FILE }}" >> $GITHUB_ENV
 
     - name: Restart Application with PM2
-      run: pm2 restart myapp --update-env
+      run: pm2 restart app.js --update-env
