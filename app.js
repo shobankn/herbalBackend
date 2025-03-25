@@ -9,6 +9,7 @@ const router = require('./router/userroute');
 
 // Create Express app
 const app = express();
+const PORT = process.env.PORT || 8000;
 
 // Load env vars
 dotenv.config({ path: '.env' });
@@ -30,7 +31,7 @@ app.use('/api/test', (req, res) => {
 });
 
 
-console.log()
-app.listen(8000, () => {
+
+app.listen(PORT, () => {
    console.log('server is running on 8000 port')
 });
