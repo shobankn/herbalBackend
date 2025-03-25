@@ -19,7 +19,7 @@ jobs:
       run: npm ci
 
     - name: Load Environment Variables
-      run: echo "${{ secrets.PROD }}" >> $GITHUB_ENV
+      run: echo "${{ secrets.HERBAL_ENV_FILE }}" >> $GITHUB_ENV
 
     - name: Restart Application with PM2
       run: pm2 restart myapp --update-env
