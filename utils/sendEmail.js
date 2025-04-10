@@ -1,3 +1,4 @@
+
 const nodemailer = require('nodemailer');
   
   // Helper function to send notification email
@@ -24,7 +25,7 @@ const nodemailer = require('nodemailer');
         <p><strong>Phone:</strong> +${contact.countryCode} ${contact.phone}</p>
         <p><strong>Message:</strong></p>
         <p>${contact.message}</p>
-        <p><strong>Submitted at:</strong> ${contact.createdAt}</p>
+        <p><strong>Submitted at:</strong> ${new Date().toLocaleString()}</p>
       `
     };
   
