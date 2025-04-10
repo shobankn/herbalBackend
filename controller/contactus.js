@@ -59,7 +59,6 @@ const subscribeUser = async (req, res) => {
       html: `
         <h3>New Newsletter Subscription</h3>
         <p><strong>Email:</strong> ${email}</p>
-        <p>Thank you for subscribing to our newsletter! We look forward to sharing updates with you.</p>
         <p><strong>Subscribed At:</strong> ${subscriber.subscribedAt.toLocaleString()}</p>
       `
     };
